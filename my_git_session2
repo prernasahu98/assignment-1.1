@@ -1,0 +1,659 @@
+Script started on 2022-06-24 22:55:23+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="77" LINES="43"]
+]0;prernasahu98@TIGER03337: ~[01;32mprernasahu98@TIGER03337[00m:[01;34m~[00m$ git -[Kstatus -s
+fatal: not a git repository (or any of the parent directories): .git
+]0;prernasahu98@TIGER03337: ~[01;32mprernasahu98@TIGER03337[00m:[01;34m~[00m$ cd my_projects
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git status -s
+[32mA[m  CONTRIBUTING.md
+[32mA[m[31mD[m README
+[31m??[m .CONTRIBUTING.md.swo
+[31m??[m .CONTRIBUTING.md.swp
+[31m??[m libgit2/
+[31m??[m mylibgit/
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ cat .gitignore
+cat: .gitignore: No such file or directory
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ cat .gitignore
+cat: .gitignore: No such file or directory
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ cat [K[K[K[Kcat .gitignore *.[oa] *~
+cat: .gitignore: No such file or directory
+cat: '*.[oa]': No such file or directory
+cat: '*~': No such file or directory
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   CONTRIBUTING.md[m
+	[32mnew file:   README[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    README[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.CONTRIBUTING.md.swo[m
+	[31m.CONTRIBUTING.md.swp[m
+	[31mlibgit2/[m
+	[31mmylibgit/[m
+
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git diff
+[?1h=[1mdiff --git a/README b/README[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex 56266d3..0000000[m[m
+[1m--- a/README[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1 +0,0 @@[m[m
+[31m-My Project[m[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ gir [K[Kt diff --staged
+[?1h=[1mdiff --git a/CONTRIBUTING.md b/CONTRIBUTING.md[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..56266d3[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/CONTRIBUTING.md[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32mMy Project[m[m
+[1mdiff --git a/README b/README[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..56266d3[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/README[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32mMy Project[m[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git add CONTRIBUTING .[K[K.md
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ echo '#test [K[K[K[K [K[K test line [K' >> CONTRIBUTING.md
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ gir [K[Kt status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   CONTRIBUTING.md[m
+	[32mnew file:   README[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   CONTRIBUTING.md[m
+	[31mdeleted:    README[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.CONTRIBUTING.md.swo[m
+	[31m.CONTRIBUTING.md.swp[m
+	[31mlibgit2/[m
+	[31mmylibgit/[m
+
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git diff
+[?1h=[1mdiff --git a/CONTRIBUTING.md b/CONTRIBUTING.md[m[m
+[1mindex 56266d3..260cee6 100644[m[m
+[1m--- a/CONTRIBUTING.md[m[m
+[1m+++ b/CONTRIBUTING.md[m[m
+[36m@@ -1 +1,2 @@[m[m
+ My Project[m[m
+[32m+[m[32m# test line[m[m
+[1mdiff --git a/README b/README[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex 56266d3..0000000[m[m
+[1m--- a/README[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1 +0,0 @@[m[m
+[31m-My Project[m[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git -diff --cached
+unknown option: -diff
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git commit
+hint: Waiting for your editor to close the file... 'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin: 1: C:/Program Files/Notepad++/notepad++.exe: not found
+error: There was a problem with the editor ''C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin'.
+Please supply the message using either -m or -F option.
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git commit -m
+error: switch `m' requires a value
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git commit -m "Story 182: fix benchmar ks for speed"
+[master (root-commit) 1d15aad] Story 182: fix benchmarks for speed
+ 2 files changed, 2 insertions(+)
+ create mode 100644 CONTRIBUTING.md
+ create mode 100644 README
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   CONTRIBUTING.md[m
+	[31mdeleted:    README[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.CONTRIBUTING.md.swo[m
+	[31m.CONTRIBUTING.md.swp[m
+	[31mlibgit2/[m
+	[31mmylibgit/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git commit -a -m 'Add new benchmarks'
+[master 54739dd] Add new benchmarks
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ delete mode 100644 README
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ rm PROJECTS.md
+rm: cannot remove 'PROJECTS.md': No such file or directory
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git rm --cached READN[KME
+fatal: pathspec 'README' did not match any files
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ GIT [K[K[K[Kgit rm log/\*.log
+fatal: pathspec 'log/*.log' did not match any files
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git rm \*~
+fatal: pathspec '*~' did not match any files
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git mov[K[Kv file[K[K[K[KREADME.md README
+fatal: bad source, source=README.md, destination=README
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.CONTRIBUTING.md.swo[m
+	[31m.CONTRIBUTING.md.swp[m
+	[31mlibgit2/[m
+	[31mmylibgit/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git rm README.md
+fatal: pathspec 'README.md' did not match any files
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git add[K[K[K[K[K[K[Kgit add README
+fatal: pathspec 'README' did not match any files
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git clone https://github.com/schacon/s implegit-progit
+Cloning into 'simplegit-progit'...
+remote: Enumerating objects: 13, done.[K
+remote: Total 13 (delta 0), reused 0 (delta 0), pack-reused 13[K
+Unpacking objects:   7% (1/13)Unpacking objects:  15% (2/13)Unpacking objects:  23% (3/13)Unpacking objects:  30% (4/13)Unpacking objects:  38% (5/13)Unpacking objects:  46% (6/13)Unpacking objects:  53% (7/13)Unpacking objects:  61% (8/13)Unpacking objects:  69% (9/13)Unpacking objects:  76% (10/13)Unpacking objects:  84% (11/13)Unpacking objects:  92% (12/13)Unpacking objects: 100% (13/13)Unpacking objects: 100% (13/13), 1.55 KiB | 75.00 KiB/s, done.
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git log
+[?1h=[33mcommit 54739ddba24f059e55c32f914c84958a896c2aa9[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m[m
+Author: Prerna Sahu <prerna.sahu@tigeranalytics.com>[m
+Date:   Fri Jun 24 23:04:07 2022 +0530[m
+[m
+    Add new benchmarks[m
+[m
+[33mcommit 1d15aad65d788f00ddb0aa20fcc7ba6bf0f1972c[m[m
+Author: Prerna Sahu <prerna.sahu@tigeranalytics.com>[m
+Date:   Fri Jun 24 23:03:12 2022 +0530[m
+[m
+    Story 182: fix benchmarks for speed[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git log -p -2
+[?1h=[33mcommit 54739ddba24f059e55c32f914c84958a896c2aa9[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m[m
+Author: Prerna Sahu <prerna.sahu@tigeranalytics.com>[m
+Date:   Fri Jun 24 23:04:07 2022 +0530[m
+[m
+    Add new benchmarks[m
+[m
+[1mdiff --git a/CONTRIBUTING.md b/CONTRIBUTING.md[m[m
+[1mindex 56266d3..260cee6 100644[m[m
+[1m--- a/CONTRIBUTING.md[m[m
+[1m+++ b/CONTRIBUTING.md[m[m
+[36m@@ -1 +1,2 @@[m[m
+ My Project[m[m
+[32m+[m[32m# test line[m[m
+[1mdiff --git a/README b/README[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex 56266d3..0000000[m[m
+[1m--- a/README[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1 +0,0 @@[m[m
+[31m-My Project[m[m
+[m
+[33mcommit 1d15aad65d788f00ddb0aa20fcc7ba6bf0f1972c[m[m
+Author: Prerna Sahu <prerna.sahu@tigeranalytics.com>[m
+Date:   Fri Jun 24 23:03:12 2022 +0530[m
+[m
+    Story 182: fix benchmarks for speed[m
+[m
+[1mdiff --git a/CONTRIBUTING.md b/CONTRIBUTING.md[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..56266d3[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/CONTRIBUTING.md[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32mMy Project[m[m
+[1mdiff --git a/README b/README[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..56266d3[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/README[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32mMy Project[m[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git log --stat
+[?1h=[33mcommit 54739ddba24f059e55c32f914c84958a896c2aa9[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m[m
+Author: Prerna Sahu <prerna.sahu@tigeranalytics.com>[m
+Date:   Fri Jun 24 23:04:07 2022 +0530[m
+[m
+    Add new benchmarks[m
+[m
+ CONTRIBUTING.md | 1 [32m+[m[m
+ README          | 1 [31m-[m[m
+ 2 files changed, 1 insertion(+), 1 deletion(-)[m
+[m
+[33mcommit 1d15aad65d788f00ddb0aa20fcc7ba6bf0f1972c[m[m
+Author: Prerna Sahu <prerna.sahu@tigeranalytics.com>[m
+Date:   Fri Jun 24 23:03:12 2022 +0530[m
+[m
+    Story 182: fix benchmarks for speed[m
+[m
+ CONTRIBUTING.md | 1 [32m+[m[m
+ README          | 1 [32m+[m[m
+ 2 files changed, 2 insertions(+)[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git log --pretty=oneline
+[?1h=[33m54739ddba24f059e55c32f914c84958a896c2aa9[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m Add new benchmarks[m
+[33m1d15aad65d788f00ddb0aa20fcc7ba6bf0f1972c[m Story 182: fix benchmarks for speed[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git log --pretty=format:"%h -%an, %ar  : %s"
+[?1h=54739dd -Prerna Sahu, 8 minutes ago : Add new benchmarks[m
+1d15aad -Prerna Sahu, 9 minutes ago : Story 182: fix benchmarks for speed[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git log --pretty=format:"%h %s --graph [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kh
+> ^C
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git log --pretty=format:"%h %s --graph [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" --graph[A]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit log --pretty=format:"%h %s" --graph
+[?1h=* 54739dd Add new benchmarks[m
+* 1d15aad Story 182: fix benchmarks for speed[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git log --since=2.weeks
+[?1h=[33mcommit 54739ddba24f059e55c32f914c84958a896c2aa9[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m[m
+Author: Prerna Sahu <prerna.sahu@tigeranalytics.com>[m
+Date:   Fri Jun 24 23:04:07 2022 +0530[m
+[m
+    Add new benchmarks[m
+[m
+[33mcommit 1d15aad65d788f00ddb0aa20fcc7ba6bf0f1972c[m[m
+Author: Prerna Sahu <prerna.sahu@tigeranalytics.com>[m
+Date:   Fri Jun 24 23:03:12 2022 +0530[m
+[m
+    Story 182: fix benchmarks for speed[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git log -S fi[Kunction_name
+[?1h=[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git log -- path/to/file
+[?1h=[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git log --pretty="%h - %s" --author='J unio C Hamano' --since=="[K[K"2008-10-01" \ --before="2008-11-01" --no-merges -- t/ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K/
+fatal: bad revision ' --before=2008-11-01'
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git log --pretty="%h - %s" --author='Junio C Hamano' --since="2008-10-01" \ --before="2008-11-01" --no-merges -- t/ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+fatal: bad revision ' --before=2008-11-01'
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git log --pretty="%h - %s" --author='Junio C Hamano' --since="2008-10-01" \ --before="2008-11-01" --no-merges -- t/ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1h=[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git commit --amed[Knd
+hint: Waiting for your editor to close the file... 'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin: 1: C:/Program Files/Notepad++/notepad++.exe: not found
+error: There was a problem with the editor ''C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin'.
+Please supply the message using either -m or -F option.
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git commit -m 'Ino[Kitial x[Kcommit'
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.CONTRIBUTING.md.swo[m
+	[31m.CONTRIBUTING.md.swp[m
+	[31mlibgit2/[m
+	[31mmylibgit/[m
+	[31msimplegit-progit/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git add forgotten_file
+fatal: pathspec 'forgotten_file' did not match any files
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git coo[Kmmit --amend
+hint: Waiting for your editor to close the file... 'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin: 1: C:/Program Files/Notepad++/notepad++.exe: not found
+error: There was a problem with the editor ''C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin'.
+Please supply the message using either -m or -F option.
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git add*[K *
+warning: adding embedded git repository: libgit2
+[33mhint: You've added another git repository inside your current repository.[m
+[33mhint: Clones of the outer repository will not contain the contents of[m
+[33mhint: the embedded repository and will not know how to obtain it.[m
+[33mhint: If you meant to add a submodule, use:[m
+[33mhint: [m
+[33mhint: 	git submodule add <url> libgit2[m
+[33mhint: [m
+[33mhint: If you added this path by mistake, you can remove it from the[m
+[33mhint: index with:[m
+[33mhint: [m
+[33mhint: 	git rm --cached libgit2[m
+[33mhint: [m
+[33mhint: See "git help submodule" for more information.[m
+warning: adding embedded git repository: mylibgit
+warning: adding embedded git repository: simplegit-progit
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   libgit2[m
+	[32mnew file:   mylibgit[m
+	[32mnew file:   simplegit-progit[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.CONTRIBUTING.md.swo[m
+	[31m.CONTRIBUTING.md.swp[m
+
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git reset HEAD CONTRIBUTING.md
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   libgit2[m
+	[32mnew file:   mylibgit[m
+	[32mnew file:   simplegit-progit[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.CONTRIBUTING.md.swo[m
+	[31m.CONTRIBUTING.md.swp[m
+
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git checkout -- CONTIBUTING[K[K[K[K[K[K[KRIBUTING.md
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   libgit2[m
+	[32mnew file:   mylibgit[m
+	[32mnew file:   simplegit-progit[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.CONTRIBUTING.md.swo[m
+	[31m.CONTRIBUTING.md.swp[m
+
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git aff[K[Kdd *
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git staus[K[Ktus
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   libgit2[m
+	[32mnew file:   mylibgit[m
+	[32mnew file:   simplegit-progit[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.CONTRIBUTING.md.swo[m
+	[31m.CONTRIBUTING.md.swp[m
+
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git restore --staged CONTRIBUTING.md
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   libgit2[m
+	[32mnew file:   mylibgit[m
+	[32mnew file:   simplegit-progit[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.CONTRIBUTING.md.swo[m
+	[31m.CONTRIBUTING.md.swp[m
+
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git resti[Kp[Kore CONTIBUTING.md[K[K[K[K[K[K[K[K[K[KRIBUTING.md
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git sr[Ktatus
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   libgit2[m
+	[32mnew file:   mylibgit[m
+	[32mnew file:   simplegit-progit[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.CONTRIBUTING.md.swo[m
+	[31m.CONTRIBUTING.md.swp[m
+
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ git clone https://github.com/schacon/t icgit
+Cloning into 'ticgit'...
+remote: Enumerating objects: 1857, done.[K
+Receiving objects:   0% (1/1857)Receiving objects:   1% (19/1857)Receiving objects:   2% (38/1857)Receiving objects:   3% (56/1857)Receiving objects:   4% (75/1857)Receiving objects:   5% (93/1857)Receiving objects:   6% (112/1857)Receiving objects:   7% (130/1857)Receiving objects:   8% (149/1857)Receiving objects:   9% (168/1857)Receiving objects:  10% (186/1857)Receiving objects:  11% (205/1857)Receiving objects:  12% (223/1857)Receiving objects:  13% (242/1857)Receiving objects:  14% (260/1857)Receiving objects:  15% (279/1857)Receiving objects:  16% (298/1857)Receiving objects:  17% (316/1857)Receiving objects:  18% (335/1857)Receiving objects:  19% (353/1857)Receiving objects:  20% (372/1857)Receiving objects:  21% (390/1857)Receiving objects:  22% (409/1857)Receiving objects:  23% (428/1857)Receiving objects:  24% (446/1857)Receiving objects:  25% (465/1857)Receiving objects:  26% (483/1857)Receiving objects:  27% (502/1857)Receiving objects:  28% (520/1857)Receiving objects:  29% (539/1857)Receiving objects:  30% (558/1857)Receiving objects:  31% (576/1857)Receiving objects:  32% (595/1857)Receiving objects:  33% (613/1857)Receiving objects:  34% (632/1857)Receiving objects:  35% (650/1857)Receiving objects:  36% (669/1857)Receiving objects:  37% (688/1857)Receiving objects:  38% (706/1857)Receiving objects:  39% (725/1857)Receiving objects:  40% (743/1857)Receiving objects:  41% (762/1857)Receiving objects:  42% (780/1857)Receiving objects:  43% (799/1857)Receiving objects:  44% (818/1857)Receiving objects:  45% (836/1857)Receiving objects:  46% (855/1857)Receiving objects:  47% (873/1857)Receiving objects:  48% (892/1857)Receiving objects:  49% (910/1857)Receiving objects:  50% (929/1857)Receiving objects:  51% (948/1857)Receiving objects:  52% (966/1857)Receiving objects:  53% (985/1857)Receiving objects:  54% (1003/1857)Receiving objects:  55% (1022/1857)Receiving objects:  56% (1040/1857)Receiving objects:  57% (1059/1857)Receiving objects:  58% (1078/1857)Receiving objects:  59% (1096/1857)Receiving objects:  60% (1115/1857)Receiving objects:  61% (1133/1857)Receiving objects:  62% (1152/1857)Receiving objects:  63% (1170/1857)Receiving objects:  64% (1189/1857)Receiving objects:  65% (1208/1857)Receiving objects:  66% (1226/1857)Receiving objects:  67% (1245/1857)Receiving objects:  68% (1263/1857)Receiving objects:  69% (1282/1857)Receiving objects:  70% (1300/1857)Receiving objects:  71% (1319/1857)Receiving objects:  72% (1338/1857)Receiving objects:  73% (1356/1857)Receiving objects:  74% (1375/1857)Receiving objects:  75% (1393/1857)Receiving objects:  76% (1412/1857)Receiving objects:  77% (1430/1857)Receiving objects:  78% (1449/1857)Receiving objects:  79% (1468/1857)Receiving objects:  80% (1486/1857)Receiving objects:  81% (1505/1857)Receiving objects:  82% (1523/1857)Receiving objects:  83% (1542/1857)Receiving objects:  84% (1560/1857)Receiving objects:  85% (1579/1857)Receiving objects:  86% (1598/1857)Receiving objects:  87% (1616/1857)Receiving objects:  88% (1635/1857)Receiving objects:  89% (1653/1857)Receiving objects:  90% (1672/1857)Receiving objects:  91% (1690/1857)Receiving objects:  92% (1709/1857)Receiving objects:  93% (1728/1857)Receiving objects:  94% (1746/1857)Receiving objects:  95% (1765/1857)Receiving objects:  96% (1783/1857)Receiving objects:  97% (1802/1857)Receiving objects:  98% (1820/1857)remote: Total 1857 (delta 0), reused 0 (delta 0), pack-reused 1857[K
+Receiving objects:  99% (1839/1857)Receiving objects: 100% (1857/1857)Receiving objects: 100% (1857/1857), 334.06 KiB | 1.11 MiB/s, done.
+Resolving deltas:   0% (0/837)Resolving deltas:   1% (15/837)Resolving deltas:   2% (19/837)Resolving deltas:   3% (27/837)Resolving deltas:   4% (34/837)Resolving deltas:   5% (42/837)Resolving deltas:  14% (121/837)Resolving deltas:  15% (126/837)Resolving deltas:  16% (134/837)Resolving deltas:  17% (145/837)Resolving deltas:  18% (151/837)Resolving deltas:  20% (175/837)Resolving deltas:  21% (176/837)Resolving deltas:  22% (187/837)Resolving deltas:  23% (198/837)Resolving deltas:  24% (204/837)Resolving deltas:  26% (224/837)Resolving deltas:  27% (232/837)Resolving deltas:  28% (235/837)Resolving deltas:  29% (244/837)Resolving deltas:  30% (256/837)Resolving deltas:  31% (262/837)Resolving deltas:  32% (271/837)Resolving deltas:  33% (280/837)Resolving deltas:  35% (294/837)Resolving deltas:  36% (302/837)Resolving deltas:  37% (313/837)Resolving deltas:  38% (325/837)Resolving deltas:  39% (327/837)Resolving deltas:  40% (335/837)Resolving deltas:  41% (344/837)Resolving deltas:  42% (352/837)Resolving deltas:  43% (361/837)Resolving deltas:  45% (385/837)Resolving deltas:  46% (388/837)Resolving deltas:  47% (400/837)Resolving deltas:  48% (410/837)Resolving deltas:  49% (413/837)Resolving deltas:  50% (419/837)Resolving deltas:  52% (441/837)Resolving deltas:  53% (444/837)Resolving deltas:  54% (456/837)Resolving deltas:  55% (461/837)Resolving deltas:  57% (481/837)Resolving deltas:  58% (488/837)Resolving deltas:  59% (500/837)Resolving deltas:  60% (503/837)Resolving deltas:  68% (571/837)Resolving deltas:  69% (581/837)Resolving deltas:  70% (587/837)Resolving deltas:  71% (600/837)Resolving deltas:  72% (603/837)Resolving deltas:  73% (612/837)Resolving deltas:  75% (631/837)Resolving deltas:  76% (637/837)Resolving deltas:  77% (647/837)Resolving deltas:  78% (655/837)Resolving deltas:  79% (666/837)Resolving deltas:  81% (680/837)Resolving deltas:  82% (693/837)Resolving deltas:  83% (696/837)Resolving deltas:  84% (708/837)Resolving deltas:  85% (713/837)Resolving deltas:  87% (730/837)Resolving deltas:  89% (746/837)Resolving deltas:  90% (761/837)Resolving deltas:  91% (762/837)Resolving deltas:  92% (775/837)Resolving deltas: 100% (837/837)Resolving deltas: 100% (837/837), done.
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ cd ticgit
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git remote
+origin
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git remote -v
+origin	https://github.com/schacon/ticgit (fetch)
+origin	https://github.com/schacon/ticgit (push)
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ cd grit
+bash: cd: grit: No such file or directory
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ gitremote [K[K[K[K[K[K[K remote -v
+origin	https://github.com/schacon/ticgit (fetch)
+origin	https://github.com/schacon/ticgit (push)
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git remote
+origin
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git remote add pb https://githu b/c[K[K.com/paulboone/ticgit
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git remote -v
+origin	https://github.com/schacon/ticgit (fetch)
+origin	https://github.com/schacon/ticgit (push)
+pb	https://github.com/paulboone/ticgit (fetch)
+pb	https://github.com/paulboone/ticgit (push)
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git fetch pb
+remote: Enumerating objects: 43, done.[K
+remote: Counting objects:   4% (1/22)[Kremote: Counting objects:   9% (2/22)[Kremote: Counting objects:  13% (3/22)[Kremote: Counting objects:  18% (4/22)[Kremote: Counting objects:  22% (5/22)[Kremote: Counting objects:  27% (6/22)[Kremote: Counting objects:  31% (7/22)[Kremote: Counting objects:  36% (8/22)[Kremote: Counting objects:  40% (9/22)[Kremote: Counting objects:  45% (10/22)[Kremote: Counting objects:  50% (11/22)[Kremote: Counting objects:  54% (12/22)[Kremote: Counting objects:  59% (13/22)[Kremote: Counting objects:  63% (14/22)[Kremote: Counting objects:  68% (15/22)[Kremote: Counting objects:  72% (16/22)[Kremote: Counting objects:  77% (17/22)[Kremote: Counting objects:  81% (18/22)[Kremote: Counting objects:  86% (19/22)[Kremote: Counting objects:  90% (20/22)[Kremote: Counting objects:  95% (21/22)[Kremote: Counting objects: 100% (22/22)[Kremote: Counting objects: 100% (22/22), done.[K
+remote: Total 43 (delta 22), reused 22 (delta 22), pack-reused 21[K
+Unpacking objects:   2% (1/43)Unpacking objects:   4% (2/43)Unpacking objects:   6% (3/43)Unpacking objects:   9% (4/43)Unpacking objects:  11% (5/43)Unpacking objects:  13% (6/43)Unpacking objects:  16% (7/43)Unpacking objects:  18% (8/43)Unpacking objects:  20% (9/43)Unpacking objects:  23% (10/43)Unpacking objects:  25% (11/43)Unpacking objects:  27% (12/43)Unpacking objects:  30% (13/43)Unpacking objects:  32% (14/43)Unpacking objects:  34% (15/43)Unpacking objects:  37% (16/43)Unpacking objects:  39% (17/43)Unpacking objects:  41% (18/43)Unpacking objects:  44% (19/43)Unpacking objects:  46% (20/43)Unpacking objects:  48% (21/43)Unpacking objects:  51% (22/43)Unpacking objects:  53% (23/43)Unpacking objects:  55% (24/43)Unpacking objects:  58% (25/43)Unpacking objects:  60% (26/43)Unpacking objects:  62% (27/43)Unpacking objects:  65% (28/43)Unpacking objects:  67% (29/43)Unpacking objects:  69% (30/43)Unpacking objects:  72% (31/43)Unpacking objects:  74% (32/43)Unpacking objects:  76% (33/43)Unpacking objects:  79% (34/43)Unpacking objects:  81% (35/43)Unpacking objects:  83% (36/43)Unpacking objects:  86% (37/43)Unpacking objects:  88% (38/43)Unpacking objects:  90% (39/43)Unpacking objects:  93% (40/43)Unpacking objects:  95% (41/43)Unpacking objects:  97% (42/43)Unpacking objects: 100% (43/43)Unpacking objects: 100% (43/43), 5.99 KiB | 291.00 KiB/s, done.
+From https://github.com/paulboone/ticgit
+ * [new branch]      master     -> pb/master
+ * [new branch]      ticgit     -> pb/ticgit
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git fetch [K[K[K[K[K[Kpush origin master
+Username for 'https://github.com': Prern  a Sahu
+Password for 'https://Prerna Sahu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/schacon/ticgit/'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/schacon/ticgit
+  Push  URL: https://github.com/schacon/ticgit
+  HEAD branch: master
+  Remote branches:
+    master tracked
+    ticgit tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/schacon/ticgit
+  Push  URL: https://github.com/schacon/ticgit
+  HEAD branch: master
+  Remote branches:
+    master tracked
+    ticgit tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git remote rename pb paul
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git remote
+origin
+paul
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git remote remove paul
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git remove
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+	remote
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git taf[Kg
+[?1h=[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git tag -l "v1.8.5*"
+[?1h=[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git tgs[K[Kag -a v1.4 -m "my version  1,[K.2[K4"
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ f[Kgit tag
+[?1h=v1.4[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git a[Kshow v1.4
+[?1h=[33mtag v1.4[m[m
+Tagger: Prerna Sahu <prerna.sahu@tigeranalytics.com>[m
+Date:   Tue Jun 28 11:37:21 2022 +0530[m
+[m
+my version 1.4[m
+[m
+[33mcommit 847256809a3d518cd36b8f81859401416fe8d945[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;33mtag: v1.4[m[33m, [m[1;31mo[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;33m[m[33m[m[1;31mrigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Jeff Welling <Jeff.Welling@Gmail.com>[m
+Date:   Tue Apr 26 17:29:17 2011 -0700[m
+[m
+    Added note to clarify which is the canonical TicGit-ng repo[m
+[m
+[1mdiff --git a/README.mkd b/README.mkd[m[m
+[1mindex ab92035..9ea9ff9 100644[m[m
+[1m--- a/README.mkd[m[m
+[1m+++ b/README.mkd[m[m
+[36m@@ -1,3 +1,6 @@[m[m
+[32m+[m[32mNote: the original TicGit author has pulled all the TicGit-ng changes into h[m [32m[m[32mis repository, creating a potentially confusing situation. The schacon TicGit[m [32m[m[32m repo, this one, is not consistently maintained. For up to date TicGit-ng inf[m [32m[m[32mo and code, check the canonical TicGit-ng repository at[m[41m  [m[m
+[32m+[m[32mhttps://github.com/jeffWelling/ticgit[m[m
+[32m+[m[m
+ ## TicGit-ng ##[m[m
+ [m[m
+ This project provides a ticketing system built on Git that is kept in a[m[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git tag v1.4-lw
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git tag
+[?1h=v1.4[m
+v1.4-lw[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git show vq[K1.4-lw
+[?1h=[33mcommit 847256809a3d518cd36b8f81859401416fe8d945[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;33mtag: v1.4-lw[m[33m[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;33m[m[33m, [m[1;33mtag: v1.4[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Jeff Welling <Jeff.Welling@Gmail.com>[m
+Date:   Tue Apr 26 17:29:17 2011 -0700[m
+[m
+    Added note to clarify which is the canonical TicGit-ng repo[m
+[m
+[1mdiff --git a/README.mkd b/README.mkd[m[m
+[1mindex ab92035..9ea9ff9 100644[m[m
+[1m--- a/README.mkd[m[m
+[1m+++ b/README.mkd[m[m
+[36m@@ -1,3 +1,6 @@[m[m
+[32m+[m[32mNote: the original TicGit author has pulled all the TicGit-ng changes into h[m [32m[m[32mis repository, creating a potentially confusing situation. The schacon TicGit[m [32m[m[32m repo, this one, is not consistently maintained. For up to date TicGit-ng inf[m [32m[m[32mo and code, check the canonical TicGit-ng repository at[m[41m  [m[m
+[32m+[m[32mhttps://github.com/jeffWelling/ticgit[m[m
+[32m+[m[m
+ ## TicGit-ng ##[m[m
+ [m[m
+ This project provides a ticketing system built on Git that is kept in a[m[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git log --pretty=online[K[K[K[Keline
+[?1h=[33m847256809a3d518cd36b8f81859401416fe8d945[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;33mtag: v1.4-lw[m[33m, [m[1;33mtag: [m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;33m[m[33m[m[1;33mv1.4[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m Added note to clarify which is the canonica[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;33m[m[33m[m[1;33m[m[33m[m[1;31m[m[33m[m[1;31m[m[33m[ml TicGit-ng repo[m
+[33mcd95b7eb8d8fb7560dc820b1e20edff427429707[m Merge branch 'hotfix-1.0.2.2'[m
+[33me4932587f8eee941565849c8ac9fa56bfb4a000a[m Bumped version to 1.0.2.2[m
+[33m470d7afa8de9aa612cf711a7c07d702bdbcc3a1d[m Fixed bug where 'ti comment' was pre[m [33m[mpopulated with a ruby object[m
+[33mb2015390494e8ae2e10393c95df89ee44ce4ec1a[m Merge branch 'hotfix-1.0.2.1'[m
+[33m871eb64b61414d9633b8056ddb3d66e77609f8a6[m Bumped version to 1.0.2.1[m
+[33m37092ec5e38287b98b6b3d52bb4c0a0ae2d776b0[m Fixed bug where the comments (#s) ap[m [33m[mpeared as first comment[m
+[33m27afa7ce172ecc2b44bbda855e6caca1d6c7f7c1[m Merge branch 'release-1.0.2'[m
+[33m48f34b3b28a3df2278430cf8b87b45c971c67d95[m Bumped version to 1.0.2[m
+[33m4f7043d484f9ff7852cec1cbc0af823961642fa8[m Added *.swp to .gitignore, for files[m [33m[m vim uses[m
+[33m31db5151f52c16c02aa7a65fa8a514317ddb8b85[m fix rdoc rake task[m
+[33m0178a68eb37d1013ec343f9eef476ac56e9926cc[m rspec 2 task fixed[m
+[33mf496146353247138a7251590762364a2cc82f1c9[m Rakefile[m
+[33m49f6312bb4852499d505578d58ddf2306316101c[m Merge branch 'ruby19' into deving[m
+[33m4c31fec749a7247728825d9d60ab834ff91ad72d[m Only use monkeypatch if we aren't us[m [33m[ming 1.9[m
+[33m0d954536b63574b0d36a2bd4581f0ddd1c2bd949[m Merge branch 'ruby19' into deving[m
+[33m2d0f1a600d42af38c364f67f783838178b84410b[m Revert "Changed cli_spec back, but f[m [33m[miled a bug to sort ti help commands"[m
+[33mc67e16ebd1ea4ce898b898e45f12f5a49002d270[m Merge branch 'ruby19' into deving[m
+[33md94e91cfe0de7936c00746fac7f5cb085091425c[m Changed cli_spec back, but filed a b[m [33m[mug to sort ti help commands[m
+[33m7f4450bbd0249139201cbbaa40c2cb91f7f01cc6[m green specs and looks like it`s ok o[m [33m[mn ruby 1.9.2[m
+[33m5b85fe901f21d3ad660c8003cc0451d3a582ecc1[m Merge branch 'hotfix-1.0.1.3' into d[m [33m[meving[m
+[33md75ad827ce8c16ae4c296ed5e159f5d01100865e[m Merge branch 'hotfix-1.0.1.3'[m
+[33m63ddc9b2bb3e59abae322a157e8a13007c995bab[m Bumped version to 1.0.1.3[m
+[33md08e6bc35ee44738a6663928e217155e6b566c07[m Permanently squashed branch-choosing[m [33m[m bug[m
+[33m1ea46e5f97cbb96d06a5d0d3d373c0196c0c4f41[m Merge branch 'sync_with_other_repos'[m [33m[m into deving[m
+[33m9ff44b7f67de9173ec4a470b1daf9799b25aed27[m Permanently squashed branch-choosing[m [33m[m bug[m
+[33m500db3a24bfb3dfb4c5b64b4ce55ed01f69a9ba2[m Fixed indentation oopsy[m
+[33m1e60fbd4bfec7fdb45e7cae590cd82b4aa918fca[m Merge branch 'deving' into sync_with[m [33m[m_other_repos[m
+:[K[K [KESCESC[KOO[KAA[K[K:[K[K:[K[K[?1l>
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git tag-a [K[K[K -a v1.2 9fceb02
+fatal: Failed to resolve '9fceb02' as a valid ref.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git tag
+[?1h=v1.4[m
+v1.4-lw[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git show v1.2
+fatal: ambiguous argument 'v1.2': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git push origin v1.5
+error: src refspec v1.5 does not match any
+[31merror: failed to push some refs to 'https://github.com/schacon/ticgit'
+[m]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git push origin --tags
+Username for 'https://github.com': Prerna Sagh  hu
+Password for 'https://Prerna Sahu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/schacon/ticgit/'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git tag -d v1.4-lw
+Deleted tag 'v1.4-lw' (was 8472568)
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git push origin :rf[K[Krefs/tags/v1.4 -lw
+Username for 'https://github.com': Prerna Sahu
+Password for 'https://Prerna Sahu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/schacon/ticgit/'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git pi[Kush origin --dedl[K[Klete v1.4-l w
+Username for 'https://github.com': Prerna Sahu
+Password for 'https://Prerna Sahu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/schacon/ticgit/'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout v2..0.[K[K[K0.0
+error: pathspec 'v2.0.0' did not match any file(s) known to git
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout v2.0-beta-0,[K.1
+error: pathspec 'v2.0-beta-0.1' did not match any file(s) known to git
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout -b version2 v2.0.0 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K0
+fatal: 'v2.0.0' is not a commit and a branch 'version2' cannot be created from it
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git confit [K[Kg --global alias.co ch eckout
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git cong[Kfig --global alias.br br anch
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git config --global alias.ci co mmit
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git oc[K[Kconfig --global alias.st st atus
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git config --global alias.unsta ge 'reset HAD[K[KEAD -=[K-'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git unstage fileA
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git reset HEAD -- file A
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git reset HEAD -- fileA
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git config --global alias.last  'log -1 HEAD'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git last
+[?1h=[33mcommit 847256809a3d518cd36b8f81859401416fe8d945[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;33mtag: v1.4[m[33m, [m[1;31mo[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;33m[m[33m[m[1;31mrigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Jeff Welling <Jeff.Welling@Gmail.com>[m
+Date:   Tue Apr 26 17:29:17 2011 -0700[m
+[m
+    Added note to clarify which is the canonical TicGit-ng repo[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git config --global alias.visua l '!gitk'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git add README test.rb LICENSE
+fatal: pathspec 'README' did not match any files
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git commit -m 'Initial commit'
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git branch testing
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git log --oneline --decorate
+[?1h=[33m8472568[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;33mtag: v1.4[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mtesting[m[33m)[m Adde[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;33m[m[33m[m[1;31m[m[33m[m[1;31m[m[33m[m[1;32m[m[33m[md note to clarify which is the canonical TicGit-ng repo[m
+[33mcd95b7e[m Merge branch 'hotfix-1.0.2.2'[m
+[33me493258[m Bumped version to 1.0.2.2[m
+[33m470d7af[m Fixed bug where 'ti comment' was prepopulated with a ruby object[m
+[33mb201539[m Merge branch 'hotfix-1.0.2.1'[m
+[33m871eb64[m Bumped version to 1.0.2.1[m
+[33m37092ec[m Fixed bug where the comments (#s) appeared as first comment[m
+[33m27afa7c[m Merge branch 'release-1.0.2'[m
+[33m48f34b3[m Bumped version to 1.0.2[m
+[33m4f7043d[m Added *.swp to .gitignore, for files vim uses[m
+[33m31db515[m fix rdoc rake task[m
+[33m0178a68[m rspec 2 task fixed[m
+[33mf496146[m Rakefile[m
+[33m49f6312[m Merge branch 'ruby19' into deving[m
+[33m4c31fec[m Only use monkeypatch if we aren't using 1.9[m
+[33m0d95453[m Merge branch 'ruby19' into deving[m
+[33m2d0f1a6[m Revert "Changed cli_spec back, but filed a bug to sort ti help comman[m [33m[mds"[m
+[33mc67e16e[m Merge branch 'ruby19' into deving[m
+[33md94e91c[m Changed cli_spec back, but filed a bug to sort ti help commands[m
+[33m7f4450b[m green specs and looks like it`s ok on ruby 1.9.2[m
+[33m5b85fe9[m Merge branch 'hotfix-1.0.1.3' into deving[m
+[33md75ad82[m Merge branch 'hotfix-1.0.1.3'[m
+[33m63ddc9b[m Bumped version to 1.0.1.3[m
+[33md08e6bc[m Permanently squashed branch-choosing bug[m
+[33m1ea46e5[m Merge branch 'sync_with_other_repos' into deving[m
+[33m9ff44b7[m Permanently squashed branch-choosing bug[m
+[33m500db3a[m Fixed indentation oopsy[m
+[33m1e60fbd[m Merge branch 'deving' into sync_with_other_repos[m
+[33m86535a7[m Merge branch 'hotfix-1.0.1.2' into deving[m
+[33m29231e0[m Merge branch 'hotfix-1.0.1.2'[m
+[33m79437ce[m Forgot to bump version number[m
+[33m9b63ffa[m Merge branch 'hotfix-1.0.1.1'[m
+[33mffc8b57[m Use 'ticgit' if 'ticgit exists[m
+[33md07cbbb[m Merge branch 'release_1.0.1' into deving[m
+[33ma5ccaa2[m Merge branch 'release_1.0.1'[m
+[33m10a81b8[m Bumped version to 1.0.1[m
+[33m189325a[m Merge branch 'sync_with_other_repos' into deving[m
+[33m3cfb3df[m Merge branch 'deving' into sync_with_other_repos[m
+[33m8c8d53b[m Merge branch 'improving_specs' into deving[m
+[33mddd82d8[m Forgot to change a ticgit-ng reference[m
+:[K[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout testing
+Switched to branch 'testing'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ vim test.rb
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;43r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[43;1H"test.rb" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                            [3;1H~                                                                            [4;1H~                                                                            [5;1H~                                                                            [6;1H~                                                                            [7;1H~                                                                            [8;1H~                                                                            [9;1H~                                                                            [10;1H~                                                                            [11;1H~                                                                            [12;1H~                                                                            [13;1H~                                                                            [14;1H~                                                                            [15;1H~                                                                            [16;1H~                                                                            [17;1H~                                                                            [18;1H~                                                                            [19;1H~                                                                            [20;1H~                                                                            [21;1H~                                                                            [22;1H~                                                                            [23;1H~                                                                            [24;1H~                                                                            [25;1H~                                                                            [26;1H~                                                                            [27;1H~                                                                            [28;1H~                                                                            [29;1H~                                                                            [30;1H~                                                                            [31;1H~                                                                            [32;1H~                                                                            [33;1H~                                                                            [34;1H~                                                                            [35;1H~                                                                            [36;1H~                                                                            [37;1H~                                                                            [38;1H~                                                                            [39;1H~                                                                            [40;1H~                                                                            [41;1H~                                                                            [42;1H~                                                                            [m[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51H~@k[1;1H[43;50H    [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;13H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H0[1;1H[43;50H [1;1H[?25h[?25l[43;50H^M[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;50H [1;1H[?25h[?25l[43;1HType  :qa  and press <Enter> to exit Vim[43;60H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;60H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Ha[1;1H[43;1H[1mrecording @a[m[43;13H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50H^M[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^X[1;1H[43;50H  [1;1H[?25h[?25l[43;1HType  :qa  and press <Enter> to exit Vim[43;60H[K[43;1H[1mrecording @a[m[43;13H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;1HType  :qa  and press <Enter> to exit Vim[43;60H[K[43;1H[1mrecording @a[m[43;13H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;1HType  :qa  and press <Enter> to exit Vim[43;60H[K[43;1H[1mrecording @a[m[43;13H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;1HType  :qa  and press <Enter> to exit Vim[43;60H[K[43;1H[1mrecording @a[m[43;13H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;1HType  :qa  and press <Enter> to exit Vim[43;60H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51H^M[1;1H[43;50H   [1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Ha[1;1H[43;1H[1mrecording @a[m[43;13H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50H^M[1;1H[43;50H  [1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;1HType  :qa  and press <Enter> to exit Vim[43;60H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hgq[1;1H[?25h[?25l[43;52HA[1;1H[43;50H   [1;1H[?25h[?25l[43;50H^M[1;1H[43;50H  [1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Ha[1;1H[43;1H[1mrecording @a[m[43;13H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50H^M[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^M[1;1H[43;50H  [1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;1HType  :qa  and press <Enter> to exit Vim[43;60H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51H^M[1;1H[43;50H   [1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Ha[1;1H[43;1H[1mrecording @a[m[43;13H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50H^M[1;1H[43;50H  [1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;1HType  :qa  and press <Enter> to exit Vim[43;60H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hgq[1;1H[?25h[?25l[43;52H~@k[1;1H[43;50H     [1;1H[?25h[?25l[43;50Hgq[1;1H[?25h[?25l[43;52Hgq[1;1H[43;50H    [1;1H[?25h[?25l[43;50Hgq[1;1H[?25h[?25l[43;52H~@k[1;1H[43;50H     [1;1H[?25h[?25l[43;50H~@k[1;1H[43;50H   [1;1H[?25h[?25l[43;50H~@k[1;1H[43;50H   [1;1H[?25h[?25l[43;50H~@k[1;1H[43;50H   [1;1H[?25h[?25l[43;60H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;60H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;60H[K[43;60H0,0-1[9CAll[1;1H[?25h[?25l[43;50Hgq[1;1H[?25h[?25l[43;52HA[1;1H[43;50H   [1;1H[?25h[?25l[43;50H^M[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50Hgq[1;1H[?25h[?25l[43;52HA[1;1H[43;50H   [1;1H[?25h[?25l[43;50H^M[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^M[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^M[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^M[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^M[1;1H[43;50H  [1;1H[?25h[?25l[43;50Ha[1;1H[43;50H [1;1H[43;1H[1m-- INSERT --[m[43;13H[K[43;60H0,1[11CAll[1;1H[?25h[?25lq[43;60H1,2[1;2H[?25h[43;1H[K[1;1H[?25l[43;50H^[[1;1H[43;50H  [1;2H[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;50H^[[1;1H[43;50H  [1;1H[43;50H^[[1;1H[43;50H  [1;1H[?25h[?25l[43;1HType  :qa!  and press ...ll changes and exit Vim[43;60H[K[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Ha[1;1H[43;1H[1mrecording @a[m[43;13H[K[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50H1[1;1H[?25h[?25l[43;51H^M[1;1H[43;50H   [1;1H[?25h[?25l[43;50H^M[1;1H[43;50H  [1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording @q[m[43;50H[K[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50Hq[1;1H[43;1H[K[1;1H[43;60H1,1[11CAll[1;1H[?25h[?25l[43;50Hq[1;1H[?25h[?25l[43;51Hq[1;1H[43;1H[1mrecording 

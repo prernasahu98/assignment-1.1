@@ -1,0 +1,434 @@
+Script started on 2022-06-28 12:30:06+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="74" LINES="43"]
+]0;prernasahu98@TIGER03337: ~[01;32mprernasahu98@TIGER03337[00m:[01;34m~[00m$ git commit -a -m 'made a change'
+fatal: not a git repository (or any of the parent directories): .git
+]0;prernasahu98@TIGER03337: ~[01;32mprernasahu98@TIGER03337[00m:[01;34m~[00m$ git checkpu[K[Kout master
+fatal: not a git repository (or any of the parent directories): .git
+]0;prernasahu98@TIGER03337: ~[01;32mprernasahu98@TIGER03337[00m:[01;34m~[00m$ cd home/prernasahu98/my_projects
+bash: cd: home/prernasahu98/my_projects: No such file or directory
+]0;prernasahu98@TIGER03337: ~[01;32mprernasahu98@TIGER03337[00m:[01;34m~[00m$ cd my_projects
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ cd ticgit
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout testing
+Already on 'testing'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git commit -a -m 'made a cha nge'
+On branch testing
+nothing to commit, working tree clean
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git commit -a -m 'made otehr [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kher  chnages[K[K[K[K[Kanges'
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git log --oneline --decorate  --graph --all
+[?1h=* [33m8472568[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;33mtag: v1.4[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mtesting[m[33m)[m[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;33m[m[33m[m[1;31m[m[33m[m[1;31m[m[33m[m[1;32m[m[33m[m Added note to clarify which is the canonical TicGit-ng repo[m
+*   [33mcd95b7e[m Merge branch 'hotfix-1.0.2.2'[m
+[32m|[m[33m\[m  [m
+[32m|[m * [33me493258[m Bumped version to 1.0.2.2[m
+[32m|[m * [33m470d7af[m Fixed bug where 'ti comment' was prepopulated with a ruby obje[m [32m[m[33m[mct[m
+[32m|[m[32m/[m  [m
+*   [33mb201539[m Merge branch 'hotfix-1.0.2.1'[m
+[34m|[m[35m\[m  [m
+[34m|[m * [33m871eb64[m Bumped version to 1.0.2.1[m
+[34m|[m * [33m37092ec[m Fixed bug where the comments (#s) appeared as first comment[m
+[34m|[m[34m/[m  [m
+*   [33m27afa7c[m Merge branch 'release-1.0.2'[m
+[36m|[m[1;31m\[m  [m
+[36m|[m * [33m48f34b3[m Bumped version to 1.0.2[m
+[36m|[m * [33m4f7043d[m Added *.swp to .gitignore, for files vim uses[m
+[36m|[m * [33m31db515[m fix rdoc rake task[m
+[36m|[m * [33m0178a68[m rspec 2 task fixed[m
+[36m|[m * [33mf496146[m Rakefile[m
+[36m|[m *   [33m49f6312[m Merge branch 'ruby19' into deving[m
+[36m|[m [1;32m|[m[1;33m\[m  [m
+[36m|[m [1;32m|[m * [33m4c31fec[m Only use monkeypatch if we aren't using 1.9[m
+[36m|[m * [1;33m|[m [33m0d95453[m Merge branch 'ruby19' into deving[m
+[36m|[m [1;34m|[m[1;33m\[m[1;33m|[m [m
+[36m|[m [1;34m|[m * [33m2d0f1a6[m Revert "Changed cli_spec back, but filed a bug to sort ti he[m [36m[m[1;34m[m[33m[mlp commands"[m
+[36m|[m * [1;35m|[m [33mc67e16e[m Merge branch 'ruby19' into deving[m
+[36m|[m [1;36m|[m[1;35m\[m[1;35m|[m [m
+[36m|[m [1;36m|[m * [33md94e91c[m Changed cli_spec back, but filed a bug to sort ti help comma[m [36m[m[1;36m[m[33m[mnds[m
+[36m|[m [1;36m|[m * [33m7f4450b[m green specs and looks like it`s ok on ruby 1.9.2[m
+[36m|[m [1;36m|[m[1;36m/[m  [m
+[36m|[m *   [33m5b85fe9[m Merge branch 'hotfix-1.0.1.3' into deving[m
+[36m|[m [32m|[m[33m\[m  [m
+[36m|[m * [33m\[m   [33m1ea46e5[m Merge branch 'sync_with_other_repos' into deving[m
+[36m|[m [34m|[m[35m\[m [33m\[m  [m
+[36m|[m [34m|[m * [33m|[m [33m9ff44b7[m Permanently squashed branch-choosing bug[m
+[36m|[m [34m|[m * [33m|[m   [33m1e60fbd[m Merge branch 'deving' into sync_with_other_repos[m
+[36m|[m [34m|[m [36m|[m[1;31m\[m [33m\[m  [m
+[36m|[m * [36m|[m [1;31m|[m [33m|[m [33m500db3a[m Fixed indentation oopsy[m
+[36m|[m [1;31m|[m [36m|[m[1;31m/[m [33m/[m  [m
+:[K[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout -b iss53
+Switched to a new branch 'iss53'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git branch iss54[K3
+fatal: A branch named 'iss53' already exists.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checjk[K[Kkout iss53
+Already on 'iss53'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git con[Kmmit -a -m 'Craete [K[K[K[K[Keate new  footer [issue 53]'
+On branch iss53
+nothing to commit, working tree clean
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout -b hotfix
+Switched to a new branch 'hotfix'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git commit -a -m 'Fix broken  email address'
+On branch hotfix
+nothing to commit, working tree clean
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git merge g[Khotfix
+Already up to date.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git branch -d hotfix
+Deleted branch hotfix (was 8472568).
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git commit -a -m 'Finish the  new footer ['[Ko[Kisdue[K[K[Ksue 53]'
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git merge iss53
+Already up to date.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git branch -d iss53
+Deleted branch iss53 (was 8472568).
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git merge iss53
+merge: iss53 - not something we can merge
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+tortoisemerge emerge vimdiff
+No files need merging
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ giot[K[Kt branch
+[?1h=* [32mmaster[m[m
+  testing[m[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git branch -v
+[?1h=* [32mmaster [m 8472568 Added note to clarify which is the canonical TicGit-ng r[m [32m[mepo[m
+  testing[m 8472568 Added note to clarify which is the canonical TicGit-ng r[m [mepo[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git branch --merged
+[?1h=* [32mmaster[m[m
+  testing[m[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git be[Kranch --np[Ko-merged
+[?1h=[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git branch -d testing
+Deleted branch testing (was 8472568).
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git branch --move bad [K-branch -name corrected-branch-name
+error: refname refs/heads/bad-branch-name not found
+fatal: Branch rename failed
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git push --set-upstream orig in corret[Kcted-branch-name
+error: src refspec corrected-branch-name does not match any
+[31merror: failed to push some refs to 'https://github.com/schacon/ticgit'
+[m]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git branch --all
+[?1h=* [32mmaster[m[m
+  [31mremotes/origin/HEAD[m -> origin/master[m
+  [31mremotes/origin/master[m[m
+  [31mremotes/origin/ticgit[m[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git pi[Kush origin --delete bad -branch-name
+Username for 'https://github.com': Prerna Sahu
+Password for 'https://Prerna Sahu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/schacon/ticgit/'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git branch --move ,[Kmaster mai n
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git push --set-upstrean[Km orig in main
+Username for 'https://github.com': Prerns   a Sahu
+Password for 'https://Prerna Sahu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/schacon/ticgit/'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git branch --all
+[?1h=* [32mmain[m[m
+  [31mremotes/origin/HEAD[m -> origin/master[m
+  [31mremotes/origin/master[m[m
+  [31mremotes/origin/ticgit[m[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git push origin --delete mas ter
+Username for 'https://github.com': Prerna Sahu
+Password for 'https://Prerna Sahu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/schacon/ticgit/'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git push origin serverfix
+error: src refspec serverfix does not match any
+[31merror: failed to push some refs to 'https://github.com/schacon/ticgit'
+[m]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ get [K[K[Kit fetch origin
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout -b serverfix or igin/serverfix
+fatal: 'origin/serverfix' is not a commit and a branch 'serverfix' cannot be created from it
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ f[Kgit checj[Kl[Kkout serverfic[Kx
+error: pathspec 'serverfix' did not match any file(s) known to git
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout -b sf origin/se rverfix
+fatal: 'origin/serverfix' is not a commit and a branch 'sf' cannot be created from it
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ fit [K[K[K[Kgit branch -u oro[Kigin/serverf ix
+error: the requested upstream branch 'origin/serverfix' does not exist
+[33mhint: [m
+[33mhint: If you are planning on basing your work on an upstream[m
+[33mhint: branch that already exists at the remote, you may need to[m
+[33mhint: run "git fetch" to retrieve it.[m
+[33mhint: [m
+[33mhint: If you are planning to push out a new local branch that[m
+[33mhint: will track its remote counterpart, you may want to use[m
+[33mhint: "git push -u" to set the upstream config as you push.[m
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git branch -vv
+[?1h=* [32mmain[m 8472568 [[34morigin/master[m] Added note to clarify which is the canonica[m [32m[m[34m[ml TicGit-ng repo[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git fetch --all; git branch  -vv
+Fetching origin
+[?1h=* [32mmain[m 8472568 [[34morigin/master[m] Added note to clarify which is the canonica[m [32m[m[34m[ml TicGit-ng repo[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git push origin --delete ser verfix
+Username for 'https://github.com': Prerna Sahu
+Password for 'https://Prerna Sahu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/schacon/ticgit/'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout experiment
+error: pathspec 'experiment' did not match any file(s) known to git
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git rebase master
+fatal: invalid upstream 'master'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Switched to a new branch 'master'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git merge experiment
+merge: experiment - not something we can merge
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git merge experiment[1Pcheckout master[2Prebase[C[C[C[C[C[C[Ccheckout experimentpush origin --delete serverfix
+Username for 'https://github.com': prernasahu98
+Password for 'https://prernasahu98@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/schacon/ticgit/'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git push origin --delete serverfix
+Username for 'https://github.com': prernasahu@98
+Password for 'https://prernasahu@98@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/schacon/ticgit/'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ [K]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ [K]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ [K]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ [K]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git merge experiment
+merge: experiment - not something we can merge
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git rebase --onto master server  client
+fatal: invalid upstream 'server'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git merge client
+merge: client - not something we can merge
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git rebase master server
+fatal: fatal: no such branch/commit 'server'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git merge server
+merge: server - not something we can merge
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git branch -d client
+error: branch 'client' not found.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git branch -d server
+error: branch 'server' not found.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git clone https://github.com/ton yx[Kchacon/blink
+Cloning into 'blink'...
+remote: Enumerating objects: 23, done.[K
+remote: Total 23 (delta 0), reused 0 (delta 0), pack-reused 23[K
+Unpacking objects:   4% (1/23)Unpacking objects:   8% (2/23)Unpacking objects:  13% (3/23)Unpacking objects:  17% (4/23)Unpacking objects:  21% (5/23)Unpacking objects:  26% (6/23)Unpacking objects:  30% (7/23)Unpacking objects:  34% (8/23)Unpacking objects:  39% (9/23)Unpacking objects:  43% (10/23)Unpacking objects:  47% (11/23)Unpacking objects:  52% (12/23)Unpacking objects:  56% (13/23)Unpacking objects:  60% (14/23)Unpacking objects:  65% (15/23)Unpacking objects:  69% (16/23)Unpacking objects:  73% (17/23)Unpacking objects:  78% (18/23)Unpacking objects:  82% (19/23)Unpacking objects:  86% (20/23)Unpacking objects:  91% (21/23)Unpacking objects:  95% (22/23)Unpacking objects: 100% (23/23)Unpacking objects: 100% (23/23), 2.60 KiB | 296.00 KiB/s, done.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ cd blink
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git checkout -b slow-blink [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kk
+Switched to a new branch 'slow-blink'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ sed -i '' 's/1000/3000/' b link.ino[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 's/1000/3000/' bli[1Pnk.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ [C[C[C[C[C[C[C[C 's/1000/3000/' blin[1Pk.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ [C[C[C[C[C[C[C's/1000/3000/' blink[1P.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ [C[C[C[C[C[C
+
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git diff --word-diff
+[?1h=[1mdiff --git a/blink.ino b/blink.ino[m[m
+[1mindex 15b9911..a6cc5a5 100644[m[m
+[1m--- a/blink.ino[m[m
+[1m+++ b/blink.ino[m[m
+[36m@@ -18,7 +18,7 @@[m [mvoid setup() {[m[m
+// the loop routine runs over and over again forever:[m[m
+void loop() {[m[m
+  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)[m[m
+  [31m[-delay(1000);-][m[32m{+delay(3000);+}[m               // wait for a second[m
+  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW[m[m
+  [31m[-delay(1000);-][m[32m{+delay(3000);+}[m               // wait for a second[m
+}[m[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git commit -a -m 'Change d elay to 3 seconds'
+[slow-blink 3a93a9f] Change delay to 3 seconds
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git push origin slow-blink [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kk
+Username for 'https://github.com': prernasahu98
+Password for 'https://prernasahu98@github.com': 
+remote: Permission to tonychacon/blink.git denied to prernasahu98.
+fatal: unable to access 'https://github.com/tonychacon/blink/': The requested URL returned error: 403
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git push origin slow-blink [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kk
+Username for 'https://github.com': prernasahu98
+Password for 'https://prernasahu98@github.com': 
+remote: Permission to tonychacon/blink.git denied to prernasahu98.
+fatal: unable to access 'https://github.com/tonychacon/blink/': The requested URL returned error: 403
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git push origin slow-blink [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kk
+Username for 'https://github.com': prernasahu0 98
+Password for 'https://prernasahu98@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/tonychacon/blink/'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git remote ad [Kd uo[Kpstream ht tps://github.com/schacon/blink
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git fetch upstream
+From https://github.com/schacon/blink
+ * [new branch]      master     -> upstream/master
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git merge upstream/master' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Auto-merging blink.ino
+CONFLICT (content): Merge conflict in blink.ino
+Automatic merge failed; fix conflicts and then commit the result.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git add blink.ino
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git commit
+hint: Waiting for your editor to close the file... 'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin: 1: C:/Program Files/Notepad++/notepad++.exe: not found
+error: There was a problem with the editor ''C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin'.
+Please supply the message using either -m or -F option.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git push origin slow-blink [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kk
+Username for 'https://github.com': prernasahu98
+Password for 'https://prernasahu98@github.com': 
+remote: Permission to tonychacon/blink.git denied to prernasahu98.
+fatal: unable to access 'https://github.com/tonychacon/blink/': The requested URL returned error: 403
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git push origin slow-blink [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd blink.inomerge upstream/master[7Pfetch upstreamremote add upstream https://github.com/schacon/blink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ [C[C[C[Cpush origin slow-blink [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -a -m 'Change delay to 3 seconds'[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ [C[C[C[C[6Pdiff --word-diff
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed -i 's/1000/3000/' blink.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git checkout -b slow-blink [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd blink[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone https://github.com/tonychacon/blink
+Cloning into 'blink'...
+remote: Enumerating objects: 23, done.[K
+remote: Total 23 (delta 0), reused 0 (delta 0), pack-reused 23[K
+Unpacking objects:   4% (1/23)Unpacking objects:   8% (2/23)Unpacking objects:  13% (3/23)Unpacking objects:  17% (4/23)Unpacking objects:  21% (5/23)Unpacking objects:  26% (6/23)Unpacking objects:  30% (7/23)Unpacking objects:  34% (8/23)Unpacking objects:  39% (9/23)Unpacking objects:  43% (10/23)Unpacking objects:  47% (11/23)Unpacking objects:  52% (12/23)Unpacking objects:  56% (13/23)Unpacking objects:  60% (14/23)Unpacking objects:  65% (15/23)Unpacking objects:  69% (16/23)Unpacking objects:  73% (17/23)Unpacking objects:  78% (18/23)Unpacking objects:  82% (19/23)Unpacking objects:  86% (20/23)Unpacking objects:  91% (21/23)Unpacking objects:  95% (22/23)Unpacking objects: 100% (23/23)Unpacking objects: 100% (23/23), 2.60 KiB | 127.00 KiB/s, done.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ cd blink
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git cj[Kheckout -b slow -blink
+Switched to a new branch 'slow-blink'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ sed -i '' 's/1000/30 00/' blink.is[K[Kino[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 's/1000/3000[1P[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[C[C[C[C[C 's/1000/3000/[1P[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[C[C[C[C's/1000/3000/'[1P blink.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git diff --word-diff [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kf
+[?1h=[1mdiff --git a/blink.ino b/blink.ino[m[m
+[1mindex 15b9911..a6cc5a5 100644[m[m
+[1m--- a/blink.ino[m[m
+[1m+++ b/blink.ino[m[m
+[36m@@ -18,7 +18,7 @@[m [mvoid setup() {[m[m
+// the loop routine runs over and over again forever:[m[m
+void loop() {[m[m
+  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)[m[m
+  [31m[-delay(1000);-][m[32m{+delay(3000);+}[m               // wait for a second[m
+  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW[m[m
+  [31m[-delay(1000);-][m[32m{+delay(3000);+}[m               // wait for a second[m
+}[m[m
+[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git commit -a -m 'Ch ange delay to 3 seconds'
+[slow-blink edd3aa9] Change delay to 3 seconds
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git push origin slow -blink
+Username for 'https://github.com': prernasahu98
+Password for 'https://prernasahu98@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/tonychacon/blink/'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ..
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ cd ..
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ cd ..
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ cd [K[K[Kcd SSH_KEY
+]0;prernasahu98@TIGER03337: ~/my_projects/SSH_KEY[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/SSH_KEY[00m$ git clone git@github.com:prernasahu98/prernasahu98.git
+Cloning into 'prernasahu98'...
+The authenticity of host 'github.com (13.234.210.38)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'github.com,13.234.210.38' (ECDSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;prernasahu98@TIGER03337: ~/my_projects/SSH_KEY[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/SSH_KEY[00m$ git --version
+git version 2.25.1
+]0;prernasahu98@TIGER03337: ~/my_projects/SSH_KEY[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/SSH_KEY[00m$  [Kgit --versionclone git@github.com:prernasahu98/prernasahu98.git
+Cloning into 'prernasahu98'...
+Warning: Permanently added the ECDSA host key for IP address '13.234.176.102' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;prernasahu98@TIGER03337: ~/my_projects/SSH_KEY[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/SSH_KEY[00m$ cd ..
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ cd ..git clone git@github.com:prernasahu98/prernasahu98.git
+Cloning into 'prernasahu98'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;prernasahu98@TIGER03337: ~/my_projects[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects[00m$ cd ticgit/blink/blink
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ticgit/blink/blink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git clone git@github.com:prernasahu98/prernasahu98.git[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone git@github.com:prernasahu98/prernasahu98.git[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[C[7P--version
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclone git@github.com:prernasahu98/prernasahu98.git[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [10Pcd SSH_KEY
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C..[Kgit push origin slow-blink
+Username for 'https://github.com': prernasahy u98
+Password for 'https://prernasahu98@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/tonychacon/blink/'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git push origin slow-blink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ticgit/blink/blink[K[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git clone git@github.com:prernasahu98/prernasahu98.git[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone git@github.com:prernasahu98/prernasahu98.git[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[C[7P--version
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclone git@github.com:prernasahu98/prernasahu98.git[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [10Pcd SSH_KEY
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C..[Kgit push origin slow-blink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Ccommit -a -m 'Change delay to 3 seconds'[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Cdiff --word-diff [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ticgit
+bash: cd: ticgit: No such file or directory
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ticgit/
+bash: cd: ticgit/: No such file or directory
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ..
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ cd ..
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ git [K[K[K[Kgit clone https://github.com/ton ycharon/blink
+fatal: destination path 'blink' already exists and is not an empty directory.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit[00m$ cd blink
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ git clon[K[K[K[K[K[K[K[Kcd blink
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd.[K ..
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ cd ..blinkgit clone https://github.com/tonycharon/blink
+fatal: destination path 'blink' already exists and is not an empty directory.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink[00m$ cd blink
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ sed i 's/1000/3000/'  v[Kblink.ino
+sed: -e expression #1, char 1: expected \ after `a', `c' or `i'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git diff --word-diff [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kf
+[?1h=[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git diff --word-diff [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed i 's/1000/3000/' blink.ino[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C i 's/1000/3000/' blink.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[C- i 's/1000/3000/' blink.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[C[C[Ci 's/1000/3000/'[1P blink.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[C[C
+
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ sed -i 's/1000/3000/' blink.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git diff --word-diff [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kf
+[?1h=[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git diff --word-diff [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kf
+[?1h=[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git commit -a -m 'Ch ange delay to 3 seconds'
+On branch slow-blink
+nothing to commit, working tree clean
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git push origin slow -blink
+Username for 'https://github.com': P p prernasahu98
+Password for 'https://prernasahu98@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/tonychacon/blink/'
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git push origin slow-blink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Ccommit -a -m 'Change delay to 3 seconds'[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Cdiff --word-diff [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed -i 's/1000/3000/' blink.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git diff --word-diff [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed i 's/1000/3000/' blink.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [12Pcd blink
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone https://github.com/tonycharon/blink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cblinkgit clone https://github.com/tonycharon/blink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cticgit/[Kgit push origin slow-blink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ticgit/blink/blink[K[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git clone git@github.com:prernasahu98/prernasahu98.git[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone git@github.com:prernasahu98/prernasahu98.git[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[C[7P--version
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclone git@github.com:prernasahu98/prernasahu98.git[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [10Pcd SSH_KEY
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C..[Kgit push origin slow-blink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Ccommit -a -m 'Change delay to 3 seconds'[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Cdiff --word-diff [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed -i 's/1000/3000/' blink.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git checkout -b slow-[5Pblink
+fatal: A branch named 'slow-blink' already exists.
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git checkout -b slow-blink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Cpush origin
+[C[C[C[C[C[C[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Ccommit -a -m 'Change delay to 3 seconds'[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Cdiff --word-diff [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed -i 's/1000/3000/' blink.ino
+]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ sed -i 's/1000/3000/' blink.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git checkout -b slow-[5Pblink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Cpush origin
+[C[C[C[C[C[C[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Ccommit -a -m 'Change delay to 3 seconds'[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Cdiff --word-diff [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kf
+[?1h=[K[?1l>]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git diff --word-diff [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed -i 's/1000/3000/' blink.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git checkout -b slow-[5Pblink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Cpush origin
+[C[C[C[C[C[C[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Ccommit -a -m 'Change delay to 3 seconds'[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Cdiff --word-diff [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed -i 's/1000/3000/' blink.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git diff --word-diff [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed i 's/1000/3000/' blink.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [12Pcd blink
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone https://github.com/tonycharon/blink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cblinkgit clone https://github.com/tonycharon/blink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cticgit/[Kgit push origin slow-blink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ticgit/blink/blink[K[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ git clone git@github.com:prernasahu98/prernasahu98.git[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ cd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone git@github.com:prernasahu98/prernasahu98.git[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[C[7P--version
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclone git@github.com:prernasahu98/prernasahu98.git[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [10Pcd SSH_KEY
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C..[Kgit push origin slow-blink[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Ccommit -a -m 'Change delay to 3 seconds'[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00m:[01;34m~/my_projects/ticgit/blink/blink[00m$ [C[C[C[Cdiff --word-diff [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed -i 's/1000/3000/' blink.ino[A]0;prernasahu98@TIGER03337: ~/my_projects/ticgit/blink/blink[01;32mprernasahu98@TIGER03337[00
